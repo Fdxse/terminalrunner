@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>TerminalRunner</RootNamespace>
+    <AssemblyName>TerminalRunner</AssemblyName>
+    <!-- Treat the platform-compatibility analyzer seriously: every Windows-only call must be guarded. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- No external NuGet packages are used; everything is built on the base class library. -->
+  </PropertyGroup>
+
+</Project>
