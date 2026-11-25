@@ -32,6 +32,24 @@ off with `--no-keypress` if you only want the display kept on.
 
 Everything is restored when the app exits.
 
+## Download the exe
+
+GitHub Actions builds a ready-to-run Windows exe (about 36 MB, no .NET install needed):
+
+- **Latest build:** open the [Actions tab](../../actions/workflows/build.yml), pick the newest
+  green run on `main` and download the `TerminalRunner-win-x64` artifact (a zip with the exe).
+- **Releases:** push a version tag and the exe is attached to a GitHub Release:
+
+  ```bash
+  git tag v1.0.0
+  git push origin v1.0.0
+  ```
+
+  It then shows up under [Releases](../../releases).
+
+Windows SmartScreen may warn the first time since the exe is not code-signed.
+Choose "More info" and then "Run anyway".
+
 ## Run it
 
 ```bash
